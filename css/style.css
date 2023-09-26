@@ -1,0 +1,112 @@
+/*importar tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;800&display=swap');
+/*Selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*selector de etiqueta*/
+a{
+    margin-left: 30px;
+    color: rgb(0, 0, 0);
+}
+/* selector por id */
+#option_one, #option_three, #option_five {
+    color: rgb(0, 0, 0);
+}
+#option_two ,#option_four {
+    color: rgba(0, 0, 0, 0.692);
+}
+/* selector por clases */
+.group_options {
+    background-color: rgb(231, 142, 90);
+    margin-top: 5px;
+}
+.group_class {
+    padding: 10px;
+}
+/* selector pseudoclase */
+.group_options:hover {
+    background-color: rgb(231, 226, 150);
+    color: black;
+}
+/* SELECTOR POR ATRIBUTO */
+[disabled] {
+    background-color: rgb(238, 177, 153);
+}
+/* selectores desendentes */
+#papa {
+    border: 2px solid rgb(216, 105, 14);
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    box-shadow: 0px 5px;
+}
+/* selector adyacente */
+#papa .hermanos + .hermanos{
+    color: rgb(3, 47, 245);
+}
+/* selector desendente */
+#papa a {
+    color: blue;
+}
+/* selector hijo */
+#papa > #etiqueta > a {
+    color: rgb(235, 154, 116);
+}
+/* titulo para box model */
+#title_box{
+    color: rgb(5, 5, 5);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(216, 151, 54);
+    text-align: center;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    margin: 20px 0;
+    border: 1px dotted #000;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 10px 1px #f70f0f;
+    box-shadow: 1px 1px 10px 1px rgb(245, 57, 57);
+    -webkit-box-shadow: 1px 1px 10px 1px rgb(245, 57, 57);
+    -moz-box-shadow: 1px 1px 10px 1px rgb(245, 57, 57);
+    font-size: 40px;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    text-transform: lowercase;
+}
+
+#box_father{
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    background-image: url(../multimedia/img/HTML.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+}
+
+#box_model{
+    /* width: 50%; */
+    /* height: 50%; */
+    /* background-color: orange; */
+    /* margin: 0 auto; */
+}
+/* media query */
+@media (min-width: 800px) and (max-width:1200px){
+    body{
+        background-color: rgb(176, 117, 224);
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+@media (max-width: 799px){
+    body{
+       background-image: url(../multimedia/img/HTML.jpg);  
+       background-size: cover;
+       background-repeat: no-repeat;
+    }
+}
