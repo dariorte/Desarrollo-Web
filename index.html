@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Principal</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style_login.css">
 </head>
-<body>
 
-    <h1>Esta es la pagina Principal</h1>
-    <ul>
-        <li><a href="./html/tablas.html">IR A TABLAS</a></li>
-        <li><a href="./html/formularios.html">IR A FORMULARIOS</a></li>
-        <li><a href="./html/texto.html">IR A TEXTOS</a></li>
-        <li><a href="./html/semanticas.html">IR A SEMANTICAS</a></li>
-        <li><a href="./html/agrupacion.html">IR A AGRUPACION</a></li>
-        <li><a href="./html/multimedia.html">IR A MULTIMEDIA</a></li>
-        <li><a href="./html/estilos.html">IR A ESTILOS</a></li>
-        <li><a href="./html/flexbox.html">IR A FLEXBOX</a></li>
-    </ul>
+<body>
+    <div class="background"></div>
+    <div class="centering">
+        <form action="" class="my_form">
+            <div class="login_welcome">
+                <img src="https://img.freepik.com/vector-gratis/lindo-astronauta-montando-cohete-agitando-mano-icono-dibujos-animados-ilustracion-concepto-icono-tecnologia-ciencia_138676-2130.jpg" alt="astronauta" class="login">
+                <h1>Iniciar Sesion</h1>
+            </div>
+            <div class="text_field">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email" aria-label="email" required>
+                <img src="https://www.svgrepo.com/download/14478/email.svg" alt="Email_icon">
+            </div>
+            <div class="text_field">
+                <label for="password">password:</label>
+                <input type="password" name="password" id="password" placeholder="Ingrese su email" aria-label="password" required>
+                <img src="https://www.svgrepo.com/show/84319/password.svg" alt="password_icon">
+            </div>
+            <input type="submit" value="login" class="my_form_button">
+            <div class="my_form_actions">
+                <div class="my_form_row">
+                    <span>¿olvidate tu contraseña?</span>
+                    <a href="#" title="Recuperar contraseña">Recuperar contraseña</a>
+                </div>
+                <div class="my_form_signup">
+                    <a href="#" title="Crear cuenta">Crear cuenta</a>
+                </div>
+            </div>
+        </form>
+
+    </div>
 </body>
+
 </html>
